@@ -1,7 +1,6 @@
 import pypyodbc
 import pandas as pd
 
-
 def sample_or_not(row):
     if 'w' in str(row['SKU']) or 'W' in str(row['SKU']):
         return 'SAMPLE'
