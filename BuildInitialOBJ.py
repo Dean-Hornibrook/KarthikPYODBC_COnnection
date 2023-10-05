@@ -1,4 +1,4 @@
-import pyodbc
+import pypyodbc
 import pandas as pd
 
 
@@ -9,7 +9,7 @@ def sample_or_not(row):
         return ''
 
 def InitialObject():
-    connection = pyodbc.connect(
+    connection = pypyodbc.connect(
         driver='{iSeries Access ODBC Driver}',
         system='shonj1.howost.strykercorp.com',
         uid='V84QRYI',
